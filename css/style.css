@@ -4,7 +4,7 @@ body{
 
 p{
     color: #ffffff;
-    font-family: Marvin;
+    font-family: Marvin; sans-serif;
     position: relative; bottom:-300px; text-align: center;
     font-size: 5vw;
 }
