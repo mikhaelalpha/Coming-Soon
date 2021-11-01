@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ff6f00;
+    overflow: auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: grid;
+    grid-template-rows: min-content;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: 98%;
+    grid-template-rows: repeat(2, 50%);
+}
+
+.sugars-position{
+    margin-top: 1.2em;
+    position: sticky;
+}
+
+.flexstart{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flexend{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 98vh;
+}
+
+.item{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    transition: all .25s linear;
+}
+
+.button:hover {
+    color: white;
+}
+
+.home{
+    color: black;
+    transition: all .25s linear;
+}
+
+.home:hover {
+    color: white;
+}
+
+.courier1{
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.courier2{
+    font-size: 1rem;
+    font-family: 'Courier Prime', monospace;
+    color: black;
+}
+
+.courier2u{
+    font-size: 1rem;
+    font-family: 'Courier Prime', monospace;
+    color: black;
+}
+
+.marvin{
+    font-family: marvin;
+    text-decoration: none;
+    font-size: 2.8rem;
+    color: black;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 8% [start] 21% 40% 21% [end] 8% 1fr;
+    grid-template-rows: 15% 10% auto min-content 6%;
+    height: 98vh;
+}
+
+article *{
+    grid-column: start / end;
+}
+
+p{
+    /* background-color: gold; */
+    max-width: 85ch;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.videosize{
+    width: 640px;
+    height: 360px;
+    margin-bottom: 1em;
+}
+
+/* .videobox{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    margin-bottom: 1em;
+}
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+} */
+
+.sugars{
+    order: 2;
+    /* background-color: wheat; */
+}
+
+.music{
+    order: 1;
+}
+
+.blog{
+    order: 3;
+}
+
+@media screen and (orientation: portrait) {
+    .sugars{
+        order: 1;
+    }
+    
+    .music{
+        order: 2;
+    }
+    
+    .blog{
+        order: 3;
+    }
+
+    .button{
+        padding: 0em;
+    }
+
+    .home{
+        padding: 0em;
+    }
+    
+    .big{
+        display: grid;
+        grid-template-rows: 98vh;
+    }
+    
+    .container{
+        grid-template-rows: 12vh 7vh 7vh;
+        grid-template-columns: 98vw;
+    }
+
+    .sugars-position{
+        margin-top: 0.7em;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .size-1{
+        grid-column: start / end;
+    }
+
+    .videobox{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    margin-bottom: 1em;
+    }
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    }
+}
